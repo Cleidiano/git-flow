@@ -20,7 +20,7 @@ import bookmarks.repository.BookmarkRepository;
 
 @RestController
 @RequestMapping("{userId}/bookmarks")
-class BookmarkRestController {
+public class BookmarkRestController {
 
 	private BookmarkRepository bookmarkRepository;
 
@@ -50,7 +50,7 @@ class BookmarkRestController {
 	}
 	
 	@GetMapping("/{bookmarkId}")
-	Bookmark readBookmark(@PathVariable String userId, @PathVariable Long bookmarkId) {
+	public Bookmark readBookmark(@PathVariable String userId, @PathVariable Long bookmarkId) {
 		this.validateUser(userId);
 		
 		return this.bookmarkRepository.findOne(bookmarkId);
