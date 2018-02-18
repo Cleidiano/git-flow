@@ -13,10 +13,10 @@ import bookmarks.repository.AccountRepository;
 import bookmarks.repository.BookmarkRepository;
 
 @SpringBootApplication
-public class RestApplication {
+public class HateoasRestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApplication.class, args);
+		SpringApplication.run(HateoasRestApplication.class, args);
 	}
 	
 	@Bean
