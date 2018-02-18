@@ -36,9 +36,9 @@ import bookmarks.repository.AccountRepository;
 import bookmarks.repository.BookmarkRepository;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes=RestApplication.class)
+@SpringBootTest(classes=HateoasRestApplication.class)
 @WebAppConfiguration
-public class RestApplicationTests {
+public class HateoasRestApplicationTests {
 	private MediaType contentType = new MediaType(MediaType.APPLICATION_JSON.getType(),
 			MediaType.APPLICATION_JSON.getSubtype(), Charset.forName("utf8"));
 
