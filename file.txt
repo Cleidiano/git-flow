@@ -2,3 +2,4 @@ Feature A
 Feature B
 Feature C
 Feature D
+Fix bug feature B
